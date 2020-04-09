@@ -21,6 +21,12 @@ function findBy(array, findFn){
   if (array.includes(findFn()) != true){
     return null;
   }
+  for (let i = 0; i < array.length; i ++){
+    if (array[i] == findFn()){
+      return array[i];
+      break;
+    }
+  }
 /*  for (let i = 0; i < array.length; i ++){
     if(array[i] == findFn(){
       break;
